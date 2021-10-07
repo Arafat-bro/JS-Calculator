@@ -1,0 +1,94 @@
+body{
+    background-color: #ee5522;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23d23d09' fill-opacity='0.6'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+#calculator{
+    width: 350px;
+    height: 550px;
+    background-color: bisque;
+    margin:0 auto;
+    position: relative;
+    top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+#result{
+    height: 120px;
+}
+#history{
+    text-align: right;
+    height: 20px;
+    margin: 0 20px;
+    padding-top: 20px;
+    font-size: 15px;
+    color: #919191;
+}
+#output{
+    text-align: right;
+    height: 60px;
+    margin: 10px 20px;
+    font-size: 30px;
+    padding-top: 10px;
+}
+#keyboard{
+    height: 400px;
+}
+.operator, .number, .empty{
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    border-radius: 50%;
+    /* border: none; */
+    border-width: 0;
+    font-weight: bold;
+    background-color: white;
+}
+.number, .empty{
+    background-color: bisque;
+}
+.number, .operator{
+     cursor: pointer
+}
+.operator:active, .number:active{
+    font-size: 25px;
+}
+.operator:focus, .number:focus{
+    outline: 0;
+}
+.operator{
+    transition: all 0.3s ease 0s;
+    font-size: 20px;
+}
+.operator:hover{
+    	color: #2f302d !important;
+    	font-weight: 700 !important;
+    	letter-spacing: 3px;
+    	background: white;
+    	box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    	transition: all 0.3s ease 0s;
+}
+button:first-child{
+    background-color: #f58ca3;
+}
+button:nth-child(2) {
+    background-color: #f7fa32;
+}
+button:nth-child(3) {
+    background-color: #49fa32;
+}
+button:nth-child(4) {
+    background-color: #3bbcf0;
+}
+button:nth-child(8){
+    background-color: #8a9b0f;
+}
+button:nth-child(12){
+    background-color: #fa7a32;
+}
+button:nth-child(16){
+    background-color: #00988d;
+}
+button:nth-last-child(1) {
+    background-color: #f23e02;
+}
